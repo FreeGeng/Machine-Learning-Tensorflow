@@ -40,7 +40,7 @@ sess.run(init)
 
 # let the network be trained 10001 times
 # every 500 steps, we print the current Weights and Biases for observation
-for step in range(10001):
+for step in range(501):
     sess.run(train)
-    if step %500 == 0:
+    if step %20 == 0:
         print(step,sess.run(Weights),sess.run(Biases))
